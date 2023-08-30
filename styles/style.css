@@ -1,24 +1,55 @@
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 92px 49px 92px 51px;
   align-items: center;
-  margin: 92px 51px 92px 49px;
-  margin-right: 49px;
-  margin-top: 92px;
+  justify-content: center;
   width: 1340px;
   height: 109px;
-  background-color: #FFF;
+  background-color: #fff;
   color: #000000;
 }
 
 .header__links-list {
   display: flex;
+  gap: 32px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  justify-self: center;
 }
 
 .header__logo-image {
   width: 148px;
   height: 105px;
+}
+
+.header__address {
+  justify-self: end;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.3px;
+
+}
+
+.address {
+  justify-self: end;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
 }
